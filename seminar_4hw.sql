@@ -1,5 +1,6 @@
 use seminar_4hw;
 
+drop table AUTO;
 -- Создание таблицы машин
 CREATE TABLE  AUTO 
 (       
@@ -43,6 +44,9 @@ select
 from auto a_all group by mark;
 
 -- Даны 2 таблицы, созданные следующим образом:
+drop table test_a;
+drop table test_b;
+
 create table test_a (id int, data varchar(1));
 create table test_b (id int);
 insert into test_a(id, data) values
